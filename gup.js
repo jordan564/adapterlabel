@@ -1,3 +1,4 @@
+"use strict";
 var gup = function(name) {
   name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
   var regexS = "[\\?&]" + name + "=([^&#]*)";
@@ -12,5 +13,11 @@ var gup = function(name) {
 var sup = function(name, elem_id) {
   var element = document.getElementById(elem_id);
   element.innerHTML = gup(name);
-  }
+  };
+
+var set_value_at = function(value, elem_id) {
+  var element = document.getElementById(elem_id);
+  element.innerHTML = value;
+  };
+  
   

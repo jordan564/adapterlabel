@@ -8,6 +8,15 @@
       sup("bs", "bs");
       sup("oa", "oa");
       sup("ba", "ba");
+      if (gup("c") === "D") {
+       set_value_at("gelijkspanning", "current_name");
+       set_value_at("&#9107", "current_symbol");
+       set_value_at("DC", "current_acronym");
+        } else {
+       set_value_at("wisselspanning", "current_name");
+       set_value_at("&#9190", "current_symbol");
+       set_value_at("AC", "current_acronym");
+      }
   };
   </script>
 </head>
@@ -20,9 +29,9 @@
       <td colspan="5">Adapters</td>
     </tr>
     <tr>
-      <td colspan="2">gelijkspanning</td>
-      <td class="currency">&#9107;</td>
-      <td colspan="2">DC</td>
+      <td colspan="2" id="current_name"></td>
+      <td class="currency" id="current_symbol"></td>
+      <td colspan="2" id="current_acronym"></td>
     </tr>
     <tr>
       <td class="data" id="os"></td>
