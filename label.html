@@ -1,9 +1,38 @@
 <!DOCTYPE html>
 <head>
-<link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+  <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
 </head>
 <body>
-  <div>DC</div>
-  <div>10V &lt;= spanning &lt;= 12V</div>
-  <div>1000mA &lt;= stroomsterkte &lt;= 2000mA</div>
+  <table>
+    <tr>
+      <td colspan="2">gelijkspanning</td>
+      <td>&#9107;</td>
+      <td colspan="2">DC</td>
+    </tr>
+    <tr>
+      <td>10V</td>
+      <td class="comparator">&lt;=</td>
+      <td>spanning</td>
+      <td class="comparator"> &lt;</td>
+      <td>12V</td>
+    </tr>
+    <tr>
+      <td>1000mA</td>
+      <td class="comparator">&lt;=</td>
+      <td>stroomsterkte</td>
+      <td class="comparator">&lt;</td>
+      <td>2000mA</td>
+    </tr>
+    <tr class="current_amperes">
+      <td>1A</td>
+      <td class="comparator">&lt;=</td>
+      <td>stroomsterkte</td>
+      <td class="comparator">&lt;</td>
+      <td>2A</td>
+    </tr>
+
+
+  </table>
+
+
 </body>

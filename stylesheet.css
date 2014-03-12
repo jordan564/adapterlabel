@@ -1,3 +1,23 @@
 body{ 
   text-align: center;
+  font-family: sans-serif;
+  font-size: 300%;
+
+
+}
+
+table {
+  width: 100%;
+}
+td {
+  margin: 10px;
+  background: blue;
+}
+
+.current_amperes {
+  font-size: 30%;
+}
+
+
+width: 100px;
 }
