@@ -2,34 +2,41 @@
 <head>
   <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
   <script src="gup.js" ></script>
+  <script>
+    window.onload = function() {
+      sup("os", "os");
+      sup("bs", "bs");
+      sup("oa", "oa");
+      sup("ba", "ba");
+  };
+  </script>
 </head>
 <body>
+
+
   <table>
+
+    <tr> 
+      <td colspan="5">Adapters</td>
+    </tr>
     <tr>
       <td colspan="2">gelijkspanning</td>
-      <td>&#9107;</td>
+      <td class="currency">&#9107;</td>
       <td colspan="2">DC</td>
     </tr>
     <tr>
-      <td>10V</td>
+      <td class="data" id="os"></td>
       <td class="comparator">&lt;=</td>
       <td>spanning</td>
       <td class="comparator"> &lt;</td>
-      <td>12V</td>
+      <td class="data" id="bs"></td>
     </tr>
     <tr>
-      <td>1000mA</td>
+      <td class="data" id="oa"></td>
       <td class="comparator">&lt;=</td>
       <td>stroomsterkte</td>
       <td class="comparator">&lt;</td>
-      <td>2000mA</td>
-    </tr>
-    <tr class="current_amperes">
-      <td>1A</td>
-      <td class="comparator">&lt;=</td>
-      <td>stroomsterkte</td>
-      <td class="comparator">&lt;</td>
-      <td>2A</td>
+      <td class="data" id="ba"></td>
     </tr>
   </table>
 </body>

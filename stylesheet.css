@@ -6,18 +6,19 @@ body{
 
 }
 
+
 table {
-  width: 100%;
+  width: 90%;
 }
-td {
-  margin: 10px;
-  background: blue;
+  font-size: 30%;{
 }
 
-.current_amperes {
-  font-size: 30%;
+.currency {
+  font-size:400%;
 }
-
-
+.comparator {
 width: 100px;
+}
+.data{
+  text-align:right;
 }

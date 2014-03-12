@@ -8,3 +8,9 @@ var gup = function(name) {
   else
     return results[1];
 }
+
+var sup = function(name, elem_id) {
+  var element = document.getElementById(elem_id);
+  element.innerHTML = gup(name);
+  }
+  
